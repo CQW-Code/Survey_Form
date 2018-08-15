@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <h1 id="title">Sports Teams Survey</h1>
+
+  <div id="form-outer">
+
+    <p id="description">
+      Tell us about your favorite teams! </p>
+    <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name-label" for="name">* Name: </label>
+        </div>
+        <div class="rightTab">
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">* Email: </label>
+        </div>
+        <div class="rightTab">
+          <input type="email" name="email" id="email" class="input-field" required placeholder="name@email.com">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age">* Age: </label>
+        </div>
+        <div class="rightTab">
+          <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="currentPos">Select a sport that you are a fan of</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="basketball">Basketball</option>
+            <option value="baseball">Baseball</option>
+            <option value="hockey">Ice Hockey</option>
+            <option value='football'>American Football</option>
+            <option value='soccer'>Futbol/Soccer</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="userRating">* Do you have a favorite pro team?</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style: none;">
+            <li class="radio">
+              <label>YES!!
+                <input name="radio-buttons" value="1" type="radio" class="userRatings">
+              </label>
+            </li>
+            <li class="radio">
+              <label>Nope
+                <input name="radio-buttons" value="2" type="radio" class="userRatings">
+              </label>
+            </li>
+            <li class="radio">
+              <label>Don't care
+                <input name="radio-buttons" value="3" type="radio" class="userRatings">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="fave-nhl">Pick your favorite NHL(hockey)team </label>
+        </div>
+        <div class="rightTab">
+          <select id="fave-nhl" name="favenhl" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="ducks">Anaheim Ducks</option>
+            <option value="coyotes">Arizona Coyotes</option>
+            <option value="bruins">Boston Bruins</option>
+            <option value="sabres">Buffalo Sabres</option>
+            <option value="flames">Calgary Flames</option>
+            <option value="hurricanes">Carolina Hurricanes</option>
+            <option value="blackhawks">Chicago Blackhawks</option>
+            <option value="avalanche">Colorado Avalanche</option>
+            <option value="bluejackets">Columbus Blue Jackets</option>
+            <option value="stars">Dallas Stars</option>
+            <option value="redwings">Detroit Red Wings</option>
+            <option value="oilers">Edmonton Oilers</option>
+            <option value="panthers">Florida Panthers</option>
+            <option value="goldenknights">Las Vegas Golden Knights</option>
+            <option value="kings">Los Angeles Kings</option>
+            <option value="wild">Minnesota Wild</option>
+            <option value="canadiens">Montreal Canadiens</option>
+            <option value="devils">New Jersey Devils</option>
+            <option value "islanders">New York Islanders</option>
+            <option value="rangers">New York Rangers</option>
+            <option value="predators">Nashville Predators</option>
+            <option value="senators">Ottawa Senators</option>
+            <option value="flyers">Philadelphia Flyers</option>
+            <option value="penguins">Pittsburgh Penguins</option>
+            <option value="blues">St. Louis Blues</option>
+            <option value="sharks">San Jose Sharks</option>
+            <option value="lightning">Tampa Bay Lightning</option>
+            <option value="mapleleafs">Toronto Maple Leafs</option>
+            <option value="canucks">Vancouver Canucks</option>
+            <option value="capitals">Washington Capitals</option>
+            <option value="jets">Winnipeg Jets</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="fave-mlb">Pick your favorite MLB (baseball) team </label>
+        </div>
+        <div class="rightTab">
+          <select id="fave-mlb" name="favemlb" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="diamondbacks">Arizona Diamondbacks</option>
+            <option value="braves">Atlanta Braves</option>
+            <option value="orioles">Baltimore Orioles</option>
+            <option value="redsox">Boston Red Sox</option>
+            <option value="cubs">Chicago Cubs</option>
+            <option value="whitesox">Chicago White Sox</option>
+            <option value="reds">Cincinatti Reds</option>
+            <options value="indians">Cleveland Indians</options>
+            <option value="rockies">Colorado Rockies</option>
+            <option value="tigers">Detroit Tigers</option>
+            <option value="astros">Houston Astros</option>
+            <option value="royals">Kansas City Royals</option>
+            <option value="angels">Los Angeles Angels</option>
+            <option value="dodgers">Los Angeles Dodgers</option>
+            <option value="marlins">Miami Marlins</option>
+            <option value="brewers">Milwaukee Brewers</option>
+            <option value="twins">Minnesota Twins</option>
+            <option value "mets">New York Mets</option>
+            <option value="yankees">New York Yankees</option>
+            <option value="athletics">Oakland Athletics</option>
+            <option value="phillies">Philadelphia Phillies</option>
+            <option value="pirates">Pittsburgh Pirates</option>
+            <option value="cardinals">St. Louis Cardinals</option>
+            <option value="padres">San Diego Padres</option>
+            <option value="giants">San Francisco Giants</option>
+            <option value="mariners">Seattle Mariners</option>
+            <option value="rays">Tampa Bay Rays</option>
+            <option value="rangers">Texas Rangers</option>
+            <option value="bluejays">Toronto Blue Jays</option>
+            <option value="capitals">Washington Nationals</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="fave-nfl">Pick your favorite NFL (football) team </label>
+        </div>
+        <div class="rightTab">
+          <select id="fave-nfl" name="favenfl" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="cardinals">Arizona Cardinals</option>
+            <option value="falcons">Atlanta Falcons</option>
+            <option value="ravens">Baltimore Ravens</option>
+            <option value="bills">Buffalo Bills</option>
+            <option value="panthers">Carolina Panthers</option>
+            <option value="bears">Chicago Bears</option>
+            <option value="bengals">Cincinatti Bengals</option>
+            <options value="browns">Cleveland Browns</options>
+            <option value="cowboys">Dallas Cowboys</option>
+            <option value="broncos">Denver Broncos</option>
+            <option value="lions">Detroit Lions</option>
+            <option value="packers">Green Bay Packers</option>
+            <option value="texans">Houston Texans</option>
+            <option value="colts">Indianapolis Colts</option>
+            <option value="jaguars">Jacksonville Jaguars</option>
+            <option value="chiefs">Kansas City Chiefs</option>
+            <option value="chargers">Los Angeles Chargers</option>
+            <option value="rams">Los Angeles Rams</option>
+            <option value="dolphins">Miami Dolphins</option>
+            <option value="vikings">Minnesota Vikings</option>
+            <option value="patriots">New England Patriots</option>
+            <option value="saints">New Orleans Saints</option>
+            <option value "giants">New York Giants</option>
+            <option value="jets">New York Jets</option>
+            <option value="raiders">Oakland Raiders</option>
+            <option value="eagles">Philadelphia Eagles</option>
+            <option value="steelers">Pittsburgh Steelers</option>
+            <option value="niners">San Francisco 49ers</option>
+            <option value="seahawks">Seattle Seahawks</option>
+            <option value="buccaneers">Tampa Bay Buccaneers</option>
+            <option value="titans">Tennessee Titans</option>
+            <option value="redskins">Washington Redskins</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="fave-nba">Pick your favorite NBA (basketball) team </label>
+        </div>
+        <div class="rightTab">
+          <select id="fave-nba" name="favenba" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="hawks">Atlanta Hawks</option>
+            <option value="celtics">Boston Celtics</option>
+            <option value="nets">Brooklyn Nets</option>
+            <option value="hornets">Charlotte Hornets</option>
+            <option value="bulls">Chicago Bulls</option>
+            <options value="cavaliers">Cleveland Cavaliers</options>
+            <option value="mavericks">Dallas Mavericks</option>
+            <option value="nuggets">Denver Nuggets</option>
+            <option value="pistons">Detroit Pistons</option>
+            <option value="warriors">Golden State Warriors</option>
+            <option value="rockets">Houston Rockets</option>
+            <option value="pacers">Indiana Pacers</option>
+            <option value="clippers">Los Angeles Clippers</option>
+            <option value="lakers">Los Angeles Lakers</option>
+            <option value="heat">Miami Heat</option>
+            <option value="grizzlies">Memphis Grizzlies</option>
+            <option value="bucks">Milwaukee Bucks</option>
+            <option value="timberwolves">Minnesota Timberwolves</option>
+            <option value="pelicans">New Orleans Pelicans</option>
+            <option value="knicks">New York Knicks</option>
+            <option value="thunder">Oklahoma City Thunder</option>
+            <option value="magic">Orlando Magic</option>
+            <option value="sixers">Philadelphia 76ers</option>
+            <option value="suns">Phoenix Suns</option>
+            <option value="trailblazers">Portland Trail Blazers</option>
+            <option value="kings">Sacramento Kings</option>
+            <option value="spurs">San Antonio Spurs</option>
+            <option value="raptors">Toronto Raptors</option>
+            <option value="jazz">Utah Jazz</option>
+            <option value="wizards">Washington Wizards</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">Snacks/drinks to go along with watching your favorite team:
+            <br>(Check all that apply): </label>
+        </div>
+        <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="1" type="checkbox" class="userRatings">Beer</label>
+            </li>
+            <li class="checkbox">
+              <input name="prefer" value="2" type="checkbox" class="userRatings">Soda</li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="3" type="checkbox" class="userRatings">Water</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="4" type="checkbox" class="userRatings">Hamburgers/Cheeseburgers</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="5" type="checkbox" class="userRatings">Hot dogs</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="6" type="checkbox" class="userRatings">Nachos</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="7" type="checkbox" class="userRatings">Trail mix</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="8" type="checkbox" class="userRatings">Popcorn</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="9" type="checkbox" class="userRatings">Peanuts</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="10" type="checkbox" class="userRatings">Candy</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="10" type="checkbox" class="userRatings">Hoagie/Sub Sandwich</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="11" type="checkbox" class="userRatings">Nothing</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="12" type="checkbox" class="userRatings">Other</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="text-field" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <div class="SubmitButton">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

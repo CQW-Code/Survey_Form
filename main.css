@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400, 500);
+
+html,
+body {
+  background-color: #024616;
+  text-align: center;
+  font-family: "Raleway", Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+#title {
+  font-weight: bold;
+  margin: 20px;
+  color: rgb(240, 240, 143);
+  text-decoration: underline;
+}
+
+#description {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.4em;
+}
+
+#form-outer {
+  background-color: darkgray;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.rowTab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 3%;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.2em;
+  /* width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px; */
+}
+
+.rightTab {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#name,
+#email,
+#number,
+#preferences,
+#comments {
+  font-size: 1.2em;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid darkgreen;
+  border-radius: 2px;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #024616;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.4em;
+  height: 70px;
+  width: 126px;
+  margin: 10px;
+  border: 2px solid white;
+}
+
+.dropdown {
+  height: 40px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 2px solid darkgreen;
+  border-radius: 2px;
+  font-size: 1.2em;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+text-area {
+  height: 50px;
+  resize: vertical;
+  margin: 5px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
